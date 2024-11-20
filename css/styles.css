@@ -1,0 +1,508 @@
+html {
+  font-size: 62.5%; /* 1rem=10px */
+  overflow-x: hidden;
+}
+body {
+  width: 100vw;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+  color: #212529;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  background-color: #f0f0f0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.sipmore-logo {
+  width: 200px;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+a {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+}
+.nav-link {
+  font-size: 2.6rem;
+  padding: 1rem 1.5rem;
+  color: black;
+}
+.nav-link:hover {
+  color: orange;
+}
+.nav-button {
+  font-size: 2rem;
+  background-color: rgb(236, 167, 38);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.nav-button:hover {
+  background-color: darkorange;
+}
+
+/* ///////////////// */
+/* Sections */
+section {
+  padding: 2rem 0;
+}
+.heading-primary {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 5rem;
+  text-align: center;
+  color: orange;
+  margin-top: 3rem;
+}
+
+/* Bootstrap ---- Carousel Section */
+.bootstrap-carousel-section {
+  padding-top: 15vh;
+  margin-bottom: 10vh;
+  width: 90vw;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  height: 60vh;
+
+  position: relative;
+}
+.carousel-image {
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  object-fit: cover;
+}
+.bsc-contentbox {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  width: 100%;
+  height: 40vh;
+  color: white;
+}
+.bsc-contentbox h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+/* ABOUT SECTION */
+.about-container {
+  padding: 8rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.about__list {
+  width: 75%;
+}
+.about__listitem {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 2.2rem;
+}
+.about__imageholder {
+  width: 30%;
+  border-radius: 1rem;
+}
+.recipe__image {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+/* Benifits SECTION */
+.benifits-bgcontainer {
+  min-height: 80vh;
+  width: 80vw;
+  background-image: url("../images/teaPhoto.jpg");
+  background-size: cover;
+  margin: 6rem auto;
+
+  display: flex;
+  align-items: center;
+}
+.benifits__list {
+  width: 75%;
+  margin: 0 auto;
+}
+.benifit__listitem {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 2.2rem;
+}
+
+/* ABOUT section2 */
+.about__listitem--heading {
+  list-style-type: none;
+}
+
+/* Benifits section2 */
+.about-container--modifier {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 6rem;
+}
+.about__imageholder--modifier {
+  width: 50%;
+  height: 450px;
+
+  display: flex;
+}
+.recipe__image--modifier {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.about__list--modifier {
+  align-self: center;
+  width: 40%;
+  list-style: decimal;
+}
+.about__listitem--modifier {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.about__listitem--modifier strong {
+  font-size: 2rem;
+}
+.about__listitem--modifier p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+/* Benifits section3 */
+.about__imageholder--modifier2 {
+  width: 50%;
+  max-height: 450px;
+}
+.recipe__image--modifier2 {
+  max-width: 80%;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Whatsapp section*/
+.whatsapp-section {
+  display: inline-block;
+  position: fixed;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+.whatsapp-image {
+  width: 10rem;
+}
+
+/* /////////////////// */
+/* Footer section */
+.footer {
+  max-width: 1500px;
+  position: relative;
+}
+.footer-imagebox {
+}
+.footer-image {
+  width: 100%;
+  max-height: 650px;
+}
+
+.footer-contentbox {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-contentbox h2 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.footer-contentbox h3 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+.footer-contentbox h4 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.footer-instagram-link {
+  display: inline-block;
+  margin-top: 2.5rem;
+}
+.instagram-icon {
+  width: 8rem;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1366px) {
+  .benifits-bgcontainer {
+    width: 100%;
+  }
+  .benifit__listitem {
+    font-size: 2.4rem;
+    margin-bottom: 1.4rem;
+  }
+  .whatsapp-image {
+    width: 9rem;
+  }
+  .instagram-icon {
+    width: 7rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about-container {
+    padding: 8rem 4rem;
+  }
+  .about__list {
+    width: 50%;
+  }
+  .about__listitem {
+    font-size: 2rem;
+  }
+  .about__imageholder {
+    width: 50%;
+  }
+
+  .footer-contentbox h2 {
+    font-size: 3.2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .footer-contentbox h3 {
+    font-size: 2.6rem;
+    margin-top: 1.5rem;
+  }
+  .footer-contentbox h4 {
+    font-size: 2rem;
+    margin-top: 1.8rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .sipmore-logo {
+    width: 150px;
+  }
+  .nav-link {
+    font-size: 1.6rem;
+  }
+  .nav-button {
+    font-size: 1.4rem;
+  }
+
+  .bsc-contentbox h1 {
+    font-size: 4.6rem;
+  }
+  .about__listitem {
+    font-size: 1.8rem;
+  }
+  .benifit__listitem {
+    font-size: 2.2rem;
+  }
+  .whatsapp-image {
+    width: 8rem;
+  }
+
+  .footer-contentbox h2 {
+    font-size: 3rem;
+    margin-top: 2.2rem;
+    margin-bottom: 2.6rem;
+  }
+  .footer-contentbox h3 {
+    font-size: 2.4rem;
+    margin-top: 1.3rem;
+  }
+  .footer-contentbox h4 {
+    font-size: 1.8rem;
+    margin-top: 1.6rem;
+  }
+}
+
+/* UI changes here */
+@media screen and (max-width: 700px) {
+  .heading-primary {
+    font-size: 3.4rem;
+  }
+  .about-container {
+    padding: 4rem 4rem;
+    flex-direction: column;
+  }
+  .about__list {
+    width: 100%;
+    order: 2;
+    padding-top: 2rem;
+  }
+  .about__imageholder {
+    width: 100%;
+    order: 1;
+  }
+  .benifit__listitem {
+    font-size: 2rem;
+  }
+
+  .about-container--modifier {
+  }
+  .about__imageholder--modifier {
+    width: 100%;
+    order: 1;
+  }
+  .about__list--modifier {
+    width: 100%;
+    order: 2;
+  }
+  .instagram-icon {
+    width: 6rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .heading-primary {
+    font-size: 3rem;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .navbar {
+    align-self: center;
+    justify-content: space-between;
+  }
+  .nav-link {
+    padding: 0.8rem 1.2rem;
+    margin-right: 3rem;
+  }
+  .nav-button {
+    padding: 0.5rem 1rem;
+  }
+  .bsc-contentbox h1 {
+    font-size: 3.5rem;
+  }
+
+  .about-container {
+    padding: 3rem 3rem;
+  }
+  .about__listitem {
+    font-size: 1.7rem;
+  }
+  .about__imageholder {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .about__listitem--modifier {
+    font-size: 2rem;
+  }
+
+  .about__listitem--modifier strong {
+    font-size: 1.7rem;
+  }
+  .about__listitem--modifier p {
+    font-size: 1.7rem;
+  }
+
+  .benifits-bgcontainer {
+    margin: 3rem auto;
+  }
+  .benifit__listitem {
+    font-size: 1.7rem;
+  }
+  .whatsapp-image {
+    width: 6rem;
+  }
+
+  /* footer */
+  .footer-image {
+    height: 350px;
+  }
+  .footer-contentbox h2 {
+    font-size: 2.2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  .footer-contentbox h3 {
+    font-size: 2.2rem;
+    margin-top: 0.5rem;
+  }
+  .footer-contentbox h4 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+  }
+
+  .footer-instagram-link {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  .instagram-icon {
+    width: 5.6rem;
+  }
+}
+
+/* //////////////////////////// */
+/* Black Theme */
+body {
+  background-color: black;
+}
+.header {
+  background-color: black;
+}
+.sipmore-logo {
+  color: white;
+  background-color: white;
+}
+.nav-link {
+  color: white;
+}
+.about__list {
+  color: white;
+}
+.about__list--modifier {
+  color: white;
+}
